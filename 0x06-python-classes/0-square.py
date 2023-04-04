@@ -3,5 +3,5 @@
 ''' This is a definition of an empty square class '''
 
 class Square:
-    ''' This does nothing '''
+    ''' the pass allows creation of empty class '''
     pass
