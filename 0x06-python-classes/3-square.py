@@ -19,11 +19,13 @@ class Square:
                 raise ValueError("size must be >= 0")
 
         self.__size = size
-    @property
-        '''this allows the size attribute to be accesible later in the coe '''
-    def size(self):
-            return self.__size
+   # @property
+    
+   # '''this allows the size attribute to be accesible later in the code '''
+   # def size(self):
+    #        return self.__size
 
     def area(self):
-        ''' this metod returns the area of the square '''
-        return int(self.size) * int(self.size)
+        ''' this method returns the area of the square '''
+        
+        return int(self.__size) * int(self.__size)
