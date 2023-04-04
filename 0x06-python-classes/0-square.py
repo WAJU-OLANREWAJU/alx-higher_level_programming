@@ -1,7 +1,8 @@
-#!/usr//bin/python3
+#!/usr/bin/python3
+# 0-square.py
+"""Defines an empty square class """
 
-''' This is a definition of an empty square class '''
 
 class Square:
-    ''' the pass allows creation of empty class '''
+    """passes"""
     pass
