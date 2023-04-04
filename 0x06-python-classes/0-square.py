@@ -1,11 +1,7 @@
 #!/usr//bin/python3
 
+''' This is a definition of an empty square class '''
+
 class Square:
-''' This is an empty square class '''
+    ''' This does nothing '''
     pass
-
-
-
-#my_square = Square()
-#print(type(my_square))
-#print(my_square.__dict__)
