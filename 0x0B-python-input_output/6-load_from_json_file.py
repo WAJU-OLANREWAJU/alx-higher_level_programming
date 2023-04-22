@@ -9,3 +9,4 @@ def load_from_json_file(filename):
     """
     with open(filename, encoding="utf-8") as file:
         ld_frm_json_file = json.load(file)
+    return ld_frm_json_file
