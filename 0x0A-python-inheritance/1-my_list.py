@@ -1,14 +1,9 @@
 #!/usr/bin/python3
 
-
 class MyList(list):
-    ''' My list class '''
-
-    def __init__(self, *args, **kwargs):
-        ''' Modification that sorts the list '''
-        super().__init__(*args, **kwargs)
-
+    ''' My list class that inherits from the base list '''
+    
     def print_sorted(self):
-        ''' this sorts '''
-        self.sort()
-        print(self)
+        ''' This sorts the list in ascending order '''
+        sorted_list = sorted(self)
+        print(sorted_list)
