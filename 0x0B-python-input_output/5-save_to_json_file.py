@@ -8,5 +8,5 @@ def save_to_json_file(my_obj, filename):
     """ function that writes an Object to a text file, using a JSON representation
     """
     with open(filename, 'w', encoding="utf-8"):
-        sv_to_jsn_file = json.dump(my_obj, filename, ensure_ascii=false)
+        sv_to_jsn_file = json.dump(my_obj, filename)
         return sv_to_jsn_file
