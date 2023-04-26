@@ -11,11 +11,4 @@ def class_to_json(obj):
     Returns:
         dict: The dictionary representation of the object
     """
-    serialized_obj = {}
-    if isinstance(obj, list):
-        serialized_obj = [class_to_json(item) for item in obj]
-    elif isinstance(obj, dict):
-        serialized_obj = {k: class_to_json(v) for k, v in obj.items()}
-    elif isinstance(obj, (str, int, bool)):
-        serialized_obj = obj
-    return serialized_obj
+    return obj.__dict__
