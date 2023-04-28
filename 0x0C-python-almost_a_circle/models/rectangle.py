@@ -18,42 +18,42 @@ class Rectangle(Base):
         self.__y = y
 
         @property
-        """ funtion to get private instance """
+        # funtion to get private instance
         def width(self):
             pass
         
         @width.setter
-        """ function to set private instance """
+        # function to set private instance
         def width(self, value):
             pass
 
         @property
-        """ funtion to get private instance """
+        # funtion to get private instance
         def height(self):
             pass
 
         @height.setter
-        """ function to set private instance """
+        # function to set private instance
         def height(self, value):
             pass
 
         @property
-        """ funtion to get private instance """
+        # funtion to get private instance
         def x(self):
             pass
 
         @x.setter
-        """ function to set private instance """
+        # function to set private instance
         def x(self, value):
             pass
 
         @property
-        """ funtion to get private instance """
+        # funtion to get private instance
         def y(self):
             pass
 
         @y.setter
-        """ function to set private instance """
+        # function to set private instance
         def y(self, value):
             pass
 
