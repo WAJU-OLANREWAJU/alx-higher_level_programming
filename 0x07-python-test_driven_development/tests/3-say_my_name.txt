@@ -1,0 +1,40 @@
+Doctest cases for task 2 (3-say_my_name.py)
+===============================================
+
+The 3-say_my_name module takes one to two positional arguments(first_name, last_name), however, last_name is optional.
+It prints "My name is <first name> <last name>"
+First_name and last_name must be strings.
+
+Edge Cases
+==========
+
+Importing function from the module:
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+    >>> say_my_name("Ibrahim", "Jamiu")
+    My name is Ibrahim Jamiu$
+    >>> say_my_name("Olanrewaju")
+    My name is Olanrewaju $
+    >>> say_my_name("John", "Smith")
+    My name is John Smith$
+    >>> say_my_name("Walter", "White")
+    My name is Walter White$
+    >>> say_my_name("Bob")
+    My name is Bob $
+    >>> say_my_name(12, "White")
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string$
+    >>> say_my_name("White", 12)
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string$
+    >>> say_my_name(30.789, "White")
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string$
+    >>> say_my_name("White", 5.098)
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string$
+

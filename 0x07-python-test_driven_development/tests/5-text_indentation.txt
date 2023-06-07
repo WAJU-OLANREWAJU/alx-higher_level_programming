@@ -1,0 +1,78 @@
+4. Text Indentation
+This is a doctest for task 4. 
+======================================
+
+Checks
+======
+Ensures text is a string.
+Prints two new lines when these characters are met ('.' ':' '?').
+There should be no space at the beginning or at the end of each printed line.
+
+Edge Cases
+==========
+
+importing 5-text_indentation.py module:
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+    >>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. \)
+    ... Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? \
+    ... Non autem hoc: igitur ne illud quidem. Fortasse id optimum, sed ubi illud: \
+    ... Plus semper voluptatis? Teneo, inquit, finem illi videri nihil dolere. \
+    ... Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum \
+    ... rationi oboediens. Si id dicis, vicimus. Inde sermone vario sex illa a Dipylo \
+    ... stadia confecimus. Sin aliud quid voles, postea. Quae animi affectio suum \
+    ... cuique tribuens atque hanc, quam dico. Utinam quidem dicerent alium alio \
+    ... beatiorem! Iam ruinas videres""")
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.$
+    $
+     \)
+    Quonam modo?$
+    $
+     Utrum igitur tibi litteram videor an totas paginas commovere?$
+    $
+     Non autem hoc:$
+    $
+     igitur ne illud quidem.$
+    $
+     Fortasse id optimum, sed ubi illud:$
+    $
+     Plus semper voluptatis?$
+    $
+     Teneo, inquit, finem illi videri nihil dolere.$
+    $
+     Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens.$
+    $
+     Si id dicis, vicimus.$
+    $
+     Inde sermone vario sex illa a Dipylo stadia confecimus.$
+    $
+     Sin aliud quid voles, postea.$
+    $
+     Quae animi affectio suum cuique tribuens atque hanc, quam dico.$
+    $
+     Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres
+    >>> text_indentation(12)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+    >>> text_indentation(67.098776)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+    >>> text_indentation(5j)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+    >>> text_indentation(87)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+    >>> text_indentation("Stop. Hey: How are you?")
+    Stop.$
+    $
+     Hey:$
+    $
+     How are you?$
+    $
+    <BLANKLINE>
+    
