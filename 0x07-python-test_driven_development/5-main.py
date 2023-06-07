@@ -1,14 +1,12 @@
 #!/usr/bin/python3
 text_indentation = __import__('5-text_indentation').text_indentation
 
-text_indentation("""In all the programs we wrote till now,\
-we have designed our program around functions ie\
-blocks of statements which manipulate data\
-This is called the procedure-oriented way of programming\
-There is another way of organizing your program\
-which is to combine data and functionality and wrap it\
-inside something called an object This is called the object\
-oriented programming paradigm Most of the time you can use procedural\
-programming, but when writing large programs or have a problem\
-that is better suited to this method\
-you can use object oriented programming techniques""")
+text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
+Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? \
+Non autem hoc: igitur ne illud quidem. Fortasse id optimum, sed ubi illud: \
+Plus semper voluptatis? Teneo, inquit, finem illi videri nihil dolere. \
+Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum \
+rationi oboediens. Si id dicis, vicimus. Inde sermone vario sex illa a Dipylo \
+stadia confecimus. Sin aliud quid voles, postea. Quae animi affectio suum \
+cuique tribuens atque hanc, quam dico. Utinam quidem dicerent alium alio \
+beatiorem! Iam ruinas videres""")
