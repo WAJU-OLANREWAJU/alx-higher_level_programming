@@ -1,4 +1,4 @@
-#!/usr/bini/python3
+#!/usr/bin/python3
 """This module adds string representation (based on 2-rectangle.py).
 """
 
@@ -59,7 +59,7 @@ class Rectangle:
         Returns:
             The rectangle area
         """
-        return int(self.__width) * int(self.__height)
+        return self.__width * self.__height
 
     def perimeter(self):
         """Defines the perimeter method.
