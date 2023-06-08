@@ -10,13 +10,13 @@ class Rectangle:
         self.__height = height
     
     @property
-    """allows for retrieval of the private attribute"""
     def width(self):
+        """allows for retrieval of the private attribute"""
         return self.__width
     
     @width.setter
-    """allows for setting private attributes"""
     def width(self, width):
+        """allows for setting of the private attribute"""
         self.__width = width
         if not isinstance(self.__width, int):
             raise TypeError('width must be an integer')
@@ -24,13 +24,13 @@ class Rectangle:
             raise ValueError('width must be >= 0')
     
     @property
-    """allows for retrieval of the private attribute"""
     def height(self):
+        """allows for retrieval of the private attribute"""
         return self.__height
     
     @height.setter
-    """allows for setting private attributes"""
     def height(self, height):
+        """allows for retrieval of the private attribute"""
         self.__height = height
         if not isinstance(self.__height, int):
             raise TypeError('height must be an integer')
