@@ -1,36 +1,52 @@
 #!/usr/bin/python3
-"""A class Rectangle that defines a rectangle by: (based on 0-rectangle.py)
+"""This module adds string representation (based on 2-rectangle.py).
 """
+
 class Rectangle:
-    """A class named Rectangle"""
-    
+    """A Rectangle class definition"""
+
     def __init__(self, width=0, height=0):
-        """Constructor method, defines two private atributes"""
+        """The constructor method.
+        
+        Args:
+            width: The width of the Rectangle.
+            height: The height of the Rectangle.
+        """
         self.__width = width
         self.__height = height
-    
+
     @property
     def width(self):
-        """allows for retrieval of the private attribute"""
+        """Allows the private attribute 'width' to be accessible"""
         return self.__width
-    
+
     @width.setter
     def width(self, width):
-        """allows for setting of the private attribute"""
+        """sets the private attribute 'width'>
+        
+        Raises:
+            TypeError: If width is not an integer.
+            ValueError: If Width is not >= 0.
+        """
         self.__width = width
         if not isinstance(self.__width, int):
             raise TypeError('width must be an integer')
         if self.__width < 0:
             raise ValueError('width must be >= 0')
-    
+
     @property
     def height(self):
-        """allows for retrieval of the private attribute"""
+        """Allows the private attribute 'height' to be accessible"""
         return self.__height
-    
+
     @height.setter
     def height(self, height):
-        """allows for retrieval of the private attribute"""
+        """sets the private attribute 'height'>
+
+        Raises:
+            TypeError: If height is not an integer.
+            ValueError: If height is not >= 0.
+        """
         self.__height = height
         if not isinstance(self.__height, int):
             raise TypeError('height must be an integer')
