@@ -21,18 +21,20 @@ class Rectangle:
         return self.__width
 
     @width.setter
-    def width(self, width):
+    def width(self, value):
         """sets the private attribute 'width'>
         
         Raises:
             TypeError: If width is not an integer.
             ValueError: If Width is not >= 0.
         """
-        self.__width = width
-        if not isinstance(self.__width, int):
+        
+        if not isinstance(value, int):
             raise TypeError('width must be an integer')
-        if self.__width < 0:
+        if value < 0:
             raise ValueError('width must be >= 0')
+        else:
+            self.__width = value
 
     @property
     def height(self):
@@ -40,18 +42,19 @@ class Rectangle:
         return self.__height
 
     @height.setter
-    def height(self, height):
+    def height(self, value):
         """sets the private attribute 'height'>
         
         Raises:
             TypeError: If height is not an integer.
             ValueError: If height is not >= 0.
         """
-        self.__height = height
         if not isinstance(self.__height, int):
             raise TypeError('height must be an integer')
-        if self.__height < 0:
+        if value < 0:
             raise ValueError('height must be >= 0')
+        else:
+            self.__height = value
     
     def area(self):
         """Defines the area method.
