@@ -28,7 +28,7 @@ class Rectangle:
             TypeError: If width is not an integer.
             ValueError: If Width is not >= 0.
         """
-        
+
         if not isinstance(value, int):
             raise TypeError('width must be an integer')
         if value < 0:
@@ -87,7 +87,13 @@ class Rectangle:
             for i in range(self.__height):
                 for j in range(self.__width):
                     output += "#"
-                if i < self.__height - 1:
+                if i < self.__height -1:
                     output += "\n"
-                    
+
             return output
+    
+    def __repr__(self):
+        """Returns:
+            A string representation of the rectangle to be able to recreate a new instance by using eval().
+        """
+        return "Rectangle({}, {})".format(self.__width, self.__height)
