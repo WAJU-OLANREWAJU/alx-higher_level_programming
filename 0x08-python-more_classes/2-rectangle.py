@@ -1,6 +1,5 @@
 #!/usr/bini/python3
-"""This module adds string representation (based on 2-rectangle.py).
-"""
+"""This module defines a Rectangle"""
 
 class Rectangle:
     """A Rectangle class definition"""
@@ -12,8 +11,8 @@ class Rectangle:
             width: The width of the Rectangle.
             height: The height of the Rectangle.
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
