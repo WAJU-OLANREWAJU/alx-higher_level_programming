@@ -33,8 +33,7 @@ class Rectangle:
             raise TypeError('width must be an integer')
         if value < 0:
             raise ValueError('width must be >= 0')
-        else:
-            self.__width = value
+        self.__width = value
 
     @property
     def height(self):
@@ -49,12 +48,11 @@ class Rectangle:
             TypeError: If height is not an integer.
             ValueError: If height is not >= 0.
         """
-        if not isinstance(self.__height, int):
+        if not isinstance(value, int):
             raise TypeError('height must be an integer')
         if value < 0:
             raise ValueError('height must be >= 0')
-        else:
-            self.__height = value
+        self.__height = value
     
     def area(self):
         """Defines the area method.
@@ -73,11 +71,10 @@ class Rectangle:
         """
         if self.__width == 0 or self.__height == 0:
             return 0
-        else:
-            return 2 * (self.__width + self.__height)
+        return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        """DEfines the str magic method.
+        """Defines the str magic method.
 
         Returns:
             An empty str if width or height is 0.
