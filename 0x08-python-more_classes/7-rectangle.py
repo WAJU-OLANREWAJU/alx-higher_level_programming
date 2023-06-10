@@ -5,6 +5,7 @@
 class Rectangle:
     """A Rectangle class definition"""
     number_of_instances = 0
+    print_symbol = '#'
 
     def __init__(self, width=0, height=0):
         """The constructor method.
@@ -13,7 +14,8 @@ class Rectangle:
             width: The width of the Rectangle.
             height: The height of the Rectangle.
         """
-
+ 
+        type(self).print_symbol = Rectangle.print_symbol
         type(self).number_of_instances += 1
         self.__width = width
         self.__height = height
@@ -90,7 +92,7 @@ class Rectangle:
             output = ""
             for i in range(self.__height):
                 for j in range(self.__width):
-                    output += "#"
+                    output += self.print_symbol
                 if i < self.__height -1:
                     output += "\n"
 
